@@ -114,6 +114,7 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
     @Override
     public void updateOrdersStatus(Map<String, String> map) {
         //从map获取订单号
+       // String s = map.get("");
         String orderNo = map.get("out_trade_no");
         //根据订单号查询订单信息
         QueryWrapper<Order> wrapper = new QueryWrapper<>();
